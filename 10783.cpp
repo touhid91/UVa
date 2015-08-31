@@ -22,20 +22,16 @@ int algorithm_sum_of_odd_within_range(int n1, int n2)
 
 int main()
 {
-	int c_test(0),
-		inputs[100][2];
+	int n1,n2,
+		c_test(0);
 
 	using namespace std;
 
 	cin >> c_test;
 	for (int I = 0; I < c_test; I++)
 	{
-		cin >> inputs[I][0];
-		cin >> inputs[I][1];
+		cin >> n1 >> n2;
+		cout << "Case " << I + 1 << ": " << algorithm_sum_of_odd_within_range(n1, n2) << endl;
 	}
 
-	for (int I = 0; I < c_test; I++)
-	{
-		cout << "Case " << I + 1 << ": " << algorithm_sum_of_odd_within_range(inputs[I][0], inputs[I][1]) << endl;
-	}
 }
