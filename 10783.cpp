@@ -5,7 +5,7 @@
 */
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 int algorithm_odd_nums_within_range(float offset_from_zero)
 {
@@ -33,5 +33,4 @@ int main()
 		cin >> n1 >> n2;
 		cout << "Case " << I + 1 << ": " << algorithm_sum_of_odd_within_range(n1, n2) << endl;
 	}
-
 }
