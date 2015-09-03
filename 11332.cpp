@@ -1,8 +1,7 @@
 /*
 	touhid91
 	11332 - Summing Digits
-	!WA
-	s #
+	0.000s #677
 */
 
 #include <cmath>
@@ -30,6 +29,8 @@ int main()
 	long int number;
 	while (cin >> number)
 	{
+		if(number == 0)
+			break;
 		cout << algorithm_summing_digits(number) << endl;
 	}
 
